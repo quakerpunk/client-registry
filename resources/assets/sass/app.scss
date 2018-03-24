@@ -1,0 +1,58 @@
+
+// Fonts
+// @import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+@import url(https://fonts.googleapis.com/css?family=Lato);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+html, body {
+  font-family: 'Lato', sans-serif;
+}
+
+$gutter: 20px;
+
+@mixin add-gutter {
+  padding-left: $gutter;
+}
+
+h2.subtitle {
+  margin-bottom: 25px;
+}
+
+table.registry {
+  th {
+    &:nth-child(2),
+    &:nth-child(3) {
+        @include add-gutter();
+      }
+  }
+  tr {
+    td {
+      &:nth-child(2),
+      &:nth-child(3) {
+        @include add-gutter();
+      }
+    }
+  }
+}
+
+table.client-info {
+  tr {
+    td {
+      padding: 4px;
+      vertical-align: top;
+
+      &:nth-child(2) {
+        @include add-gutter();
+      }
+    }
+  }
+}
+
+form.search-form {
+  margin: 25px 0;
+}

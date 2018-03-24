@@ -1,0 +1,17 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/storage/log/*.log
+/sql
+/vendor
+.DS_Store
+/.idea
+.lando.yml
+/.vscode
+/.vagrant
+.env
+Homestead.json
+Homestead.yaml
+npm-debug.log
+OLDreadme.md
